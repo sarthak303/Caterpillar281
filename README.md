@@ -51,8 +51,8 @@ This application automates equipment inspections by taking video inputs from tec
 
 **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/CAT-Inspect-App.git
- bash```
+   git clone https://github.com/vinutnaruni/Caterpillar-281.git
+ ```
 
 
 ## Contributing
