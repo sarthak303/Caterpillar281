@@ -52,7 +52,7 @@ This application automates equipment inspections by taking video inputs from tec
 **Clone the Repository:**
    ```bash
    git clone https://github.com/yourusername/CAT-Inspect-App.git
-   cd CAT-Inspect-App
+ ```bash
 
 
 ## Contributing
