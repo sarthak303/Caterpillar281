@@ -1,4 +1,4 @@
-# AI-Powered CAT Inspect Application
+# Automaated CAT Inspect Application
 
 ## Overview
 
