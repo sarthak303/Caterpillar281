@@ -1,0 +1,194 @@
+.container-93 {
+    position: absolute;
+    top: -86px;
+    left: 1092px;
+    background-color: var(--color-gold);
+    width: 229px;
+    height: 1062px;
+  }
+  .text19 {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    line-height: 120%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 255.3px;
+    height: 21px;
+  }
+  .container-322,
+  .container-333 {
+    position: absolute;
+    top: 42px;
+    left: 24px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    width: 1085px;
+    height: 586px;
+  }
+  .container-322 {
+    top: 107px;
+    left: -63px;
+    background-color: var(--color-moccasin);
+    width: 1126px;
+    height: 662px;
+  }
+  .text20 {
+    position: absolute;
+    top: 20px;
+    left: 41px;
+    line-height: 120%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 255.3px;
+    height: 21px;
+  }
+  .container-334 {
+    position: absolute;
+    top: 0;
+    left: -63px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-goldenrod);
+    width: 1126px;
+    height: 61px;
+    color: var(--color-black);
+  }
+  .submit5 {
+    position: absolute;
+    top: 16px;
+    left: 36px;
+    line-height: 120%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 182px;
+    height: 21px;
+  }
+  .submit4 {
+    position: absolute;
+    top: 823px;
+    left: 373px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-500);
+    width: 254px;
+    height: 54px;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-lightgray-100);
+  }
+  .container-26,
+  .section-13 {
+    position: absolute;
+    top: 86px;
+    left: 119px;
+    width: 1321px;
+    height: 862px;
+  }
+  .section-13 {
+    top: 0;
+    left: 0;
+    background-color: var(--color-floralwhite);
+    width: 1440px;
+    height: 1034px;
+  }
+  .logo-icon6 {
+    width: 178px;
+    position: relative;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .nav3 {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    right: -531px;
+    left: 531px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--padding-81xl);
+    box-sizing: border-box;
+  }
+  .logo-icon7 {
+    width: 178px;
+    position: relative;
+    height: 30px;
+    object-fit: cover;
+  }
+  .caterpillar-inc3 {
+    margin: 0;
+  }
+  .logotext3 {
+    position: relative;
+    line-height: 100%;
+  }
+  .logocolumn3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-21xl);
+  }
+  .linkcolumntitle-13 {
+    position: relative;
+    font-size: var(--font-size-mini);
+    line-height: 100%;
+  }
+  .linkcolumn-item-1-13 {
+    position: relative;
+    line-height: 100%;
+    cursor: pointer;
+  }
+  .linkcolumn-13 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+  }
+  .columngroup3,
+  .footer3 {
+    display: flex;
+    flex-direction: row;
+  }
+  .columngroup3 {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xl);
+    color: var(--color-black);
+  }
+  .footer3 {
+    position: absolute;
+    width: 100%;
+    top: 1034px;
+    right: 2px;
+    left: -2px;
+    background-color: var(--color-gray-100);
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-101xl) var(--padding-81xl) var(--padding-61xl);
+    box-sizing: border-box;
+    gap: var(--gap-81xl);
+    font-size: var(--font-size-base);
+    color: var(--color-silver);
+  }
+  .pdf-preview {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1393px;
+    text-align: left;
+    font-size: var(--font-size-mid);
+    color: var(--color-saddlebrown-300);
+    font-family: var(--font-inter);
+  }
+  
