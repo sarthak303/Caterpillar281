@@ -57,6 +57,6 @@ This application automates equipment inspections by taking video inputs from tec
 
 ## Contributing
 
-** We welcome contributions! **
+**We welcome contributions!**
 **Please fork the repository, create a new branch, and submit a pull request. Ensure your code adheres to the project’s style guidelines and is well-documented.**
 
