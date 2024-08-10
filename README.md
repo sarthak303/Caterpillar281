@@ -1,4 +1,4 @@
-# Automaated CAT Inspect Application
+# Automated CAT Inspect Application
 
 ## Overview
 
