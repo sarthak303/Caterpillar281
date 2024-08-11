@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -96,4 +96,129 @@
     <script src="i-n-s-p-e-c-t-i-o-n-p-a-g-e.js"></script>
   </body>
       </body>
+</html>
+ -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./i-n-s-p-e-c-t-i-o-n-p-a-g-e.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" />
+</head>
+<body>
+  <div class="inspection-page">
+    <div class="section-12">
+      <div class="container-23">
+        <div class="container-92"></div>
+        <div class="container-34">
+          <div class="container-41">
+            <div class="explore-now2">
+              <div class="explore-now3" id="uploadVideoButton">UPLOAD VIDEO</div>
+              <input type="file" id="videoInput" accept="video/*" style="display:none;" />
+            </div>
+          </div>
+        </div>
+        <div class="container-302">
+          <div class="text17">PREVIEW</div>
+        </div>
+        <div class="container-321">
+          <div class="text18">TRANSCRIPT</div>
+          <div class="container-332" id="transcriptContainer"></div> <!-- Added ID here -->
+        </div>
+        <div class="submit2" id="submitButton">
+          <b class="submit3">SUBMIT</b>
+        </div>
+        <div class="skip" id="skipButton">
+          <b class="submit3">SKIP</b>
+        </div>
+      </div>
+    </div>
+    <div class="nav2" data-scroll-to="navContainer">
+      <div class="itemgroup1">
+        <div class="tires">TIRES</div>
+        <div class="battery">BATTERY</div>
+        <div class="exterior">EXTERIOR</div>
+        <div class="brakes">BRAKES</div>
+        <div class="brakes">ENGINE</div>
+      </div>
+      <img class="logo-icon4" alt="" src="Images/logo.png" id="logoImage" />
+    </div>
+    <div class="footer2">
+      <div class="logocolumn2">
+        <img class="logo-icon5" alt="" src="Images/logo.png" />
+        <div class="logotext2">
+          <p class="caterpillar-inc2">© 2024 Caterpillar, Inc.</p>
+          <p class="caterpillar-inc2">All rights reserved.</p>
+        </div>
+      </div>
+      <div class="columngroup2">
+        <div class="linkcolumn-12">
+          <div class="linkcolumntitle-12">Quick Links</div>
+          <div class="linkcolumn-item-1-12" id="linkColumnItem11">Home</div>
+          <div class="linkcolumn-item-1-12" id="linkColumnItem12">About</div>
+          <div class="linkcolumn-item-1-12" id="linkColumnItem13">Inspection</div>
+          <div class="logotext2">Contact</div>
+        </div>
+        <div class="linkcolumn-12">
+          <div class="linkcolumntitle-12">Explore More</div>
+          <div class="logotext2">FAQ</div>
+          <div class="logotext2">Privacy</div>
+          <div class="logotext2">Terms</div>
+          <div class="logotext2">Partners</div>
+        </div>
+        <div class="linkcolumn-12">
+          <div class="linkcolumntitle-12">Connect With Us</div>
+          <div class="logotext2">Facebook</div>
+          <div class="logotext2">Twitter</div>
+          <div class="logotext2">Instagram</div>
+          <div class="logotext2">LinkedIn</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("uploadVideoButton").onclick = function() {
+      document.getElementById("videoInput").click();
+    };
+
+    document.getElementById("videoInput").onchange = function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const formData = new FormData();
+        formData.append("file", file);
+
+        fetch('/upload', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("transcriptContainer").textContent = data.transcript;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+
+        const fileURL = URL.createObjectURL(file);
+        const videoElement = document.createElement("video");
+        videoElement.controls = true;
+        videoElement.style.width = "100%";
+        videoElement.style.height = "auto";
+        videoElement.src = fileURL;
+        document.querySelector(".container-302").appendChild(videoElement);
+      }
+    };
+
+    document.getElementById("submitButton").onclick = function() {
+      alert("Form submitted!");
+    };
+
+    document.getElementById("skipButton").onclick = function() {
+      window.location.href = "next-page.html";
+    };
+  </script>
+</body>
 </html>
